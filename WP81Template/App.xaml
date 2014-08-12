@@ -2,6 +2,11 @@
     x:Class="WP81Template.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WP81Template">
+    xmlns:local="using:WP81Template"
+    xmlns:VMBase="using:WP81Template.ViewModels.Base">
+
+    <Application.Resources>
+        <VMBase:ViewModelLocator x:Key="Locator"/>
+    </Application.Resources>
 
 </Application>
