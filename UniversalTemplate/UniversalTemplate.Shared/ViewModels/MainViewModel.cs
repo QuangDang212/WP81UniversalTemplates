@@ -1,8 +1,8 @@
-﻿namespace WP81Template.ViewModels
+﻿namespace UniversalTemplate.ViewModels
 {
     using System.Threading.Tasks;
+    using UniversalTemplate.Base;
     using Windows.UI.Xaml.Navigation;
-    using WP81Template.ViewModels.Base;
 
     public class MainViewModel : ViewModelBase
     {

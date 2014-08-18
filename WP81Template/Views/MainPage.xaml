@@ -11,6 +11,16 @@
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="24,12">
+            <TextBlock Text="Template" Style="{ThemeResource TitleTextBlockStyle}"
+                        TextWrapping="Wrap"/>
+            <TextBlock Text="WP 8.1" Style="{ThemeResource HeaderTextBlockStyle}"
+                        TextWrapping="Wrap"/>
+        </StackPanel>
 
     </Grid>
 </base:PageBase>

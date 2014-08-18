@@ -1,4 +1,4 @@
-WPW81UniversalTemplates
+Windows Phone and Universal Apps Templates
 =======================
 
-Templates for Windows Store Apps, Windows Phone Apps and Universal Apps using MVVM
+Templates for Windows Phone Apps and Universal Apps using MVVM (8.1)

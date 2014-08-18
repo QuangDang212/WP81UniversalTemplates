@@ -7,7 +7,7 @@
     <ProjectGuid>{D70B8D1D-2365-4181-8902-81A74CCD16BA}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WP81Template</RootNamespace>
+    <RootNamespace>W81Template</RootNamespace>
     <AssemblyName>WP81Template</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>

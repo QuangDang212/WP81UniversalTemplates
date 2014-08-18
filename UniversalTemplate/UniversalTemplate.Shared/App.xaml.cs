@@ -37,6 +37,10 @@ namespace UniversalTemplate
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+
+#if WINDOWS_PHONE_APP
+            Windows.Phone.UI.Input.HardwareButtons.BackPressed += HardwareButtons_BackPressed;
+#endif
         }
 
         /// <summary>
@@ -133,5 +137,22 @@ namespace UniversalTemplate
             // TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+#if WINDOWS_PHONE_APP
+        private void HardwareButtons_BackPressed(object sender, Windows.Phone.UI.Input.BackPressedEventArgs e)
+        {
+            Frame frame = Window.Current.Content as Frame;
+
+            if (frame == null)
+                return;
+
+            if (frame.CanGoBack)
+            {
+                frame.GoBack();
+                e.Handled = true;
+            }
+        }
+#endif
+        
     }
 }
