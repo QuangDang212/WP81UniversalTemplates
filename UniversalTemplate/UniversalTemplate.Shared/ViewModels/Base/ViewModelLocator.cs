@@ -1,19 +1,21 @@
 ﻿namespace UniversalTemplate.Base
 {
-    using Microsoft.Practices.Unity;
+    using Autofac;
     using UniversalTemplate.ViewModels;
 
     public class ViewModelLocator
     {
-        private IUnityContainer container;
+        private IContainer container;
 
         public ViewModelLocator()
         {
-            container = new UnityContainer();
-            // Services
-            //container.RegisterType<IService, Service>(new ContainerControlledLifetimeManager());
+            var builder = new ContainerBuilder();
+            // Add Services here
+            //builder.RegisterType<Service>().As<IService>().IsSingleInstance();
 
-            container.RegisterType<MainViewModel>();
+            builder.RegisterType<MainViewModel>();
+
+            this.container = builder.Build();
         }
 
         public MainViewModel MainViewModel
