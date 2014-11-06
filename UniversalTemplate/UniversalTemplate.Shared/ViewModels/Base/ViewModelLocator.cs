@@ -11,7 +11,7 @@
         {
             var builder = new ContainerBuilder();
             // Add Services here
-            //builder.RegisterType<Service>().As<IService>().IsSingleInstance();
+            //builder.RegisterType<Service>().As<IService>().SingleInstance();
 
             builder.RegisterType<MainViewModel>();
 
